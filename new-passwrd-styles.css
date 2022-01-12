@@ -24,6 +24,66 @@ body {
     
 }
 
+.navegacion {
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 54px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.046805);
+}
+
+.navegacion .logo-container img {
+    margin-left: 51px;
+    margin-top: 12px;
+    width: 144px;
+    height: 30px;
+    
+
+}
+
+.navegator-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.navegator-list li a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: var(--very-light-pink);
+    font-weight: 500;
+    font-size: 1.6rem;
+l   ine-height: 2.0rem;
+
+}
+
+.navegacion >.nav-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 52px;
+}
+
+.nav-end a {
+    margin-left: 30px;
+}
+
+.nav-end .sign-in {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: var(--hospital-green);
+
+}
+
+.nav-end .shopping-logo img {
+    width: 25px;
+    height: 26px;
+}
 .new-password {
     display: grid;
     place-items: center;
@@ -46,6 +106,7 @@ body {
     margin-top: 76px;
     margin-bottom: 74px;
     justify-self: center;
+    display: none;
     
 }
 
@@ -97,6 +158,7 @@ body {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.0001);
     border-radius: 10px;
     margin-bottom: 50px;
+    cursor: pointer;
     
 }
 
@@ -106,6 +168,19 @@ body {
     font-size: 1.8rem;
     line-height: 2.2rem;
     text-align: center;
+
+}
+
+@media (max-width: 768px) {
+    .navegacion {
+        display: none;
+
+    }
+
+    .logo {
+        display: inline-block;
+    }
+
 
 }
 
